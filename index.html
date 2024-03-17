@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap-reverse;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background: radial-gradient(circle at right, #9c27b0, #ff9800);
+           
+        }
+
+        .con {
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: .3px;
+            word-spacing: .5px;
+            border: 1px solid white;
+            font-size: clamp(24px, 10vw, 14px);
+            color: white;
+            overflow: hidden;
+            position: relative; /* Added */
+            border-radius: 0 50% 0 50%;
+          
+          
+           
+        }
+
+        p1 {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            backdrop-filter: blur(10px);
+            color:white;
+            position: relative; /* Added */
+            padding:40px;
+            text-align: center;
+            display: grid; 
+            place-content: center;
+            align-items: center;
+            font-size: 16px;
+        }
+        
+
+        .gradient {
+            display: grid;
+            place-content: center;
+            align-items: center;
+            opacity: .5;
+         
+            animation: rotateBackground 10s linear infinite;
+            background: repeating-conic-gradient(
+                black 0 15deg,
+                white 15deg 30deg
+            );
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+           
+        }
+
+        @keyframes rotateBackground {
+            from {
+                transform: rotate(0deg) scale(1.05);
+                opacity: .7;
+                
+            }
+            to {
+                transform: rotate(360deg)  scale(1);;
+                opacity:.5;
+               
+            }
+            }
+        
+    </style>
+</head>
+<body>
+
+<div class="con">
+    <div class="gradient"></div>
+    <p1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde illo impedit nulla recusandae quo, magnam officia, molestiae alias placeat maxime minus facere! Doloribus doloremque tenetur obcaecati iusto dignissimos veritatis expedita accusamus mollitia, dolor officiis! Corporis voluptatem repudiandae architecto neque molestiae a pariatur delectus corrupti nesciunt. Placeat repellat quia eligendi sequi doloribus tempora quam deserunt culpa modi!</p1>
+</div>
+
+<div class="con">
+    <div class="gradient"></div>
+    <p1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde illo impedit nulla recusandae quo, magnam officia, molestiae alias placeat maxime minus facere! Doloribus doloremque tenetur obcaecati iusto dignissimos veritatis expedita accusamus mollitia, dolor officiis! Corporis voluptatem repudiandae architecto neque molestiae a pariatur delectus corrupti nesciunt. Placeat repellat quia eligendi sequi doloribus tempora quam deserunt culpa modi!</p1>
+</div>
+
+<div class="con">
+    <div class="gradient"></div>
+    <p1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde illo impedit nulla recusandae quo, magnam officia, molestiae alias placeat maxime minus facere! Doloribus doloremque tenetur obcaecati iusto dignissimos veritatis expedita accusamus mollitia, dolor officiis! Corporis voluptatem repudiandae architecto neque molestiae a pariatur delectus corrupti nesciunt. Placeat repellat quia eligendi sequi doloribus tempora quam deserunt culpa modi!</p1>
+</div>
+
+
+</body>
+</html>
